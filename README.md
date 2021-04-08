@@ -5,5 +5,9 @@
 ## Getting Started:
 
 ## Technology + Techniques:
+-- React.js
+-- SCSS
+-- HTML5
+-- Vercel
 
 ## IceBox Features:
