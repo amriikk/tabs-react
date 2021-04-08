@@ -1,7 +1,6 @@
-# Snap Engineering Academy - 2021
+# Tabs on React.js - 2021
 
 ## Jhon Trujillo | Software Engineer
-### Long Beach City College
 
 ## Getting Started:
 
