@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { FaAngleDoubleRight } from 'react-icons/fa';
-// import exp from './exp.json';
-// import data from './data'
-import './App.css';
 
 const url = 'https://course-api.com/react-tabs-project';
 
 function App() {
   const [loading, setLoading] = useState(true);
   const [jobs, setJobs] = useState([]);
-  const [value, setValue] = useState(1);
+  const [value, setValue] = useState(0);
 
   const fetchJobs = async () => {
     const response = await fetch(url);
@@ -27,6 +24,25 @@ function App() {
       <h1>loading...</h1>
     </section>
   }
+
+  // const getJobs = () => {
+  //   fetch('exp.json'
+  //   ,{
+  //     headers : { 
+  //       'Content-Type': 'application/json',
+  //       'Accept': 'application/json'
+  //      }
+  //   }
+  //   )
+  //   .then(function(response){
+  //     console.log(response)
+  //     return response.json();
+  //   })
+  //   .then(function(myJson) {
+  //     console.log(myJson);
+  //     setJobs(myJson)
+  //   });
+  // }
 
   const { company, dates, duties, title } = jobs[value];
 
@@ -46,7 +62,7 @@ function App() {
                   <button 
                     key={item.id} 
                     onClick={()=>setValue(index)}
-                    className={`job-btn`}
+                    className={`job-btn ${index === value && 'active-btn'}`}
                   >
                     { item.company }
                   </button>
