@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 // import { FaAngleDoubleRight } from 'react-icons/fa';
-import exp from './data.js';
+import exp from './exp.json';
 import './App.css';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
 
   useEffect( () => {
     fetchJobs();
-  }, []);
+  }, [])
   
   if(loading){
     return <section className='section-loading'> 
@@ -25,9 +25,15 @@ function App() {
     </section>
   }
 
+  const { company, dates, duties, title } = jobs[value];
+
   return (
     <div className="App">
-      <h2>Experience Tabs</h2>
+      <section className='section'>
+        <div className= 'title'>
+          <h2>Experience</h2>
+        </div>
+      </section>
     </div>
   );
 }
