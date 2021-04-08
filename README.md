@@ -11,3 +11,5 @@
 -- Vercel
 
 ## IceBox Features:
+-- Add gradient background
+-- Night Mode
