@@ -1,6 +1,6 @@
-exp = [
+const exp = [
     {   
-        id: 01,
+        id: 1,
         order: 1,
         company: 'JoTr.io',
         title: 'Lead Software Engineer',
@@ -13,7 +13,7 @@ exp = [
         ],
     },
     {
-        id: 02,
+        id: 2,
         order: 2,
         company: 'RobertHalf',
         title: 'Field Support Technician',
@@ -26,7 +26,7 @@ exp = [
         ]
     },
     {
-        id: 03,
+        id: 3,
         order: 3,
         company: 'Boost Mobile',
         title: 'Sales Manager',
@@ -39,7 +39,7 @@ exp = [
         ]
     },
     {
-        id: 04,
+        id: 4,
         order: 4,
         company: 'Apple',
         title: 'Visual Specialist',
@@ -52,7 +52,7 @@ exp = [
         ]
     },
     {
-        id: 05,
+        id: 5,
         order: 5,
         company: 'CorePower Yoga',
         title: 'Studio Experience Team',
@@ -65,3 +65,5 @@ exp = [
         ]
     }
 ]
+
+export default exp;
